@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ReidiusDBModel7StoreContainer" CdmEntityContainer="ReidiusDBEntities7">
+    <EntitySetMapping Name="SAFEZONE">
+      <EntityTypeMapping TypeName="ReidiusDBModel7.SAFEZONE">
+        <MappingFragment StoreEntitySet="SAFEZONE">
+          <ScalarProperty Name="safezoneID" ColumnName="safezoneID" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+          <ScalarProperty Name="latidude" ColumnName="latidude" />
+          <ScalarProperty Name="suburbID" ColumnName="suburbID" />
+          <ScalarProperty Name="adminID" ColumnName="adminID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

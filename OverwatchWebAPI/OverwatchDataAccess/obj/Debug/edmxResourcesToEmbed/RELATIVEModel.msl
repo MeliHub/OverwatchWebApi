@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ReidiusDBModel7StoreContainer" CdmEntityContainer="ReidiusDBEntities9">
+    <EntitySetMapping Name="RELATIVE">
+      <EntityTypeMapping TypeName="ReidiusDBModel7.RELATIVE">
+        <MappingFragment StoreEntitySet="RELATIVE">
+          <ScalarProperty Name="relativeID" ColumnName="relativeID" />
+          <ScalarProperty Name="relativeName" ColumnName="relativeName" />
+          <ScalarProperty Name="contactNo" ColumnName="contactNo" />
+          <ScalarProperty Name="personID" ColumnName="personID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

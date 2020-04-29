@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ReidiusDBModel4StoreContainer" CdmEntityContainer="ReidiusDBEntities4">
+    <EntitySetMapping Name="ADMINISTRATOR">
+      <EntityTypeMapping TypeName="ReidiusDBModel4.ADMINISTRATOR">
+        <MappingFragment StoreEntitySet="ADMINISTRATOR">
+          <ScalarProperty Name="adminID" ColumnName="adminID" />
+          <ScalarProperty Name="authorityLevel" ColumnName="authorityLevel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

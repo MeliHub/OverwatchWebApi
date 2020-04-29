@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ReidiusDBModel6.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="HOTSPOT">
+    <Key>
+      <PropertyRef Name="hotspotID" />
+    </Key>
+    <Property Name="hotspotID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="longitude" Type="nvarchar(max)" />
+    <Property Name="latitude" Type="nvarchar(max)" />
+    <Property Name="duration" Type="nvarchar(max)" />
+    <Property Name="radius" Type="nvarchar(max)" />
+    <Property Name="suburbID" Type="int" />
+    <Property Name="adminID" Type="int" />
+  </EntityType>
+  <EntityContainer Name="ReidiusDBModel6StoreContainer">
+    <EntitySet Name="HOTSPOT" EntityType="Self.HOTSPOT" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

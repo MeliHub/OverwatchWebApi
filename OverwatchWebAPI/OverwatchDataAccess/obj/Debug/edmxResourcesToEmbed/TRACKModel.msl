@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ReidiusDBModel11StoreContainer" CdmEntityContainer="ReidiusDBEntities12">
+    <EntitySetMapping Name="TRACK">
+      <EntityTypeMapping TypeName="ReidiusDBModel11.TRACK">
+        <MappingFragment StoreEntitySet="TRACK">
+          <ScalarProperty Name="trackID" ColumnName="trackID" />
+          <ScalarProperty Name="dateTime" ColumnName="dateTime" />
+          <ScalarProperty Name="gpsCoordinates" ColumnName="gpsCoordinates" />
+          <ScalarProperty Name="duration" ColumnName="duration" />
+          <ScalarProperty Name="personID" ColumnName="personID" />
+          <ScalarProperty Name="adminID" ColumnName="adminID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

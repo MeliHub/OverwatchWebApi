@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ReidiusDBModel8" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="COMMENT">
+    <Key>
+      <PropertyRef Name="commentID" />
+    </Key>
+    <Property Name="commentID" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="commentText" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="dateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="personID" Type="Int32" Nullable="false" />
+    <Property Name="postID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="ReidiusDBEntities9" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="COMMENT" EntityType="Self.COMMENT" />
+  </EntityContainer>
+</Schema>

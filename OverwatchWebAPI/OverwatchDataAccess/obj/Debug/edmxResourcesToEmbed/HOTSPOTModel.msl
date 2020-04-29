@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ReidiusDBModel6StoreContainer" CdmEntityContainer="ReidiusDBEntities6">
+    <EntitySetMapping Name="HOTSPOT">
+      <EntityTypeMapping TypeName="ReidiusDBModel6.HOTSPOT">
+        <MappingFragment StoreEntitySet="HOTSPOT">
+          <ScalarProperty Name="adminID" ColumnName="adminID" />
+          <ScalarProperty Name="hotspotID" ColumnName="hotspotID" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="duration" ColumnName="duration" />
+          <ScalarProperty Name="radius" ColumnName="radius" />
+          <ScalarProperty Name="suburbID" ColumnName="suburbID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

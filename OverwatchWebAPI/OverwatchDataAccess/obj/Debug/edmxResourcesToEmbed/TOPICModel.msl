@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ReidiusDBModel15StoreContainer" CdmEntityContainer="ReidiusDBEntities16">
+    <EntitySetMapping Name="TOPIC">
+      <EntityTypeMapping TypeName="ReidiusDBModel15.TOPIC">
+        <MappingFragment StoreEntitySet="TOPIC">
+          <ScalarProperty Name="topicID" ColumnName="topicID" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="createdAt" ColumnName="createdAt" />
+          <ScalarProperty Name="updatedAt" ColumnName="updatedAt" />
+          <ScalarProperty Name="personID" ColumnName="personID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

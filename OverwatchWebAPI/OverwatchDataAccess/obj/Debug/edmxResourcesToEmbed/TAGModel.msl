@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ReidiusDBModel9StoreContainer" CdmEntityContainer="ReidiusDBEntities10">
+    <EntitySetMapping Name="TAG">
+      <EntityTypeMapping TypeName="ReidiusDBModel9.TAG">
+        <MappingFragment StoreEntitySet="TAG">
+          <ScalarProperty Name="tagID" ColumnName="tagID" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

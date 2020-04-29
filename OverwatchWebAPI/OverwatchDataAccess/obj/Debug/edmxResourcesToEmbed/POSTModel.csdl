@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ReidiusDBModel7" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="POST">
+    <Key>
+      <PropertyRef Name="postID" />
+    </Key>
+    <Property Name="postID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="createdAt" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="updatedAt" Type="DateTime" Precision="3" />
+    <Property Name="status__A_I_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="personID" Type="Int32" Nullable="false" />
+    <Property Name="topicID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="ReidiusDBEntities8" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="POST" EntityType="Self.POST" />
+  </EntityContainer>
+</Schema>

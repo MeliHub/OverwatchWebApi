@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ReidiusDBModel3StoreContainer" CdmEntityContainer="ReidiusDBEntities3">
+    <EntitySetMapping Name="REPORTINCIDENT">
+      <EntityTypeMapping TypeName="ReidiusDBModel3.REPORTINCIDENT">
+        <MappingFragment StoreEntitySet="REPORTINCIDENT">
+          <ScalarProperty Name="campusID" ColumnName="campusID" />
+          <ScalarProperty Name="comment" ColumnName="comment" />
+          <ScalarProperty Name="reportIncidentID" ColumnName="reportIncidentID" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="personID" ColumnName="personID" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="dateTime" ColumnName="dateTime" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="hotspotID" ColumnName="hotspotID" />
+          <ScalarProperty Name="typeID" ColumnName="typeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ReidiusDBModel11" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TRACK">
+    <Key>
+      <PropertyRef Name="trackID" />
+    </Key>
+    <Property Name="trackID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="dateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="gpsCoordinates" Type="Double" Nullable="false" />
+    <Property Name="duration" Type="Time" Precision="7" />
+    <Property Name="personID" Type="Int32" Nullable="false" />
+    <Property Name="adminID" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="ReidiusDBEntities12" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TRACK" EntityType="Self.TRACK" />
+  </EntityContainer>
+</Schema>

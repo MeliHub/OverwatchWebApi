@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ReidiusDBModelStoreContainer" CdmEntityContainer="ReidiusDBEntities">
+    <EntitySetMapping Name="PERSON">
+      <EntityTypeMapping TypeName="ReidiusDBModel.PERSON">
+        <MappingFragment StoreEntitySet="PERSON">
+          <ScalarProperty Name="personID" ColumnName="personID" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="surname" ColumnName="surname" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="contactNo" ColumnName="contactNo" />
+          <ScalarProperty Name="deviceToken" ColumnName="deviceToken" />
+          <ScalarProperty Name="personType" ColumnName="personType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

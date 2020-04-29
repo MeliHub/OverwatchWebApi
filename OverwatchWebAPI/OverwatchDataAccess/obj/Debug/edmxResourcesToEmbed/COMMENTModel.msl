@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ReidiusDBModel8StoreContainer" CdmEntityContainer="ReidiusDBEntities9">
+    <EntitySetMapping Name="COMMENT">
+      <EntityTypeMapping TypeName="ReidiusDBModel8.COMMENT">
+        <MappingFragment StoreEntitySet="COMMENT">
+          <ScalarProperty Name="commentID" ColumnName="commentID" />
+          <ScalarProperty Name="commentText" ColumnName="commentText" />
+          <ScalarProperty Name="dateTime" ColumnName="dateTime" />
+          <ScalarProperty Name="personID" ColumnName="personID" />
+          <ScalarProperty Name="postID" ColumnName="postID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

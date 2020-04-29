@@ -1,0 +1,530 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{40806268-25EE-4ABF-9480-B9577A0DBA7A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OverwatchDataAccess</RootNamespace>
+    <AssemblyName>OverwatchDataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADMINISTRATOR.cs">
+      <DependentUpon>ADMINISTRATORModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINISTRATORModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ADMINISTRATORModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINISTRATORModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ADMINISTRATORModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINISTRATORModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ADMINISTRATORModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ALERT.cs">
+      <DependentUpon>ALERTModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ALERTModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ALERTModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ALERTModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ALERTModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ALERTModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ALERTModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="CAMPUS.cs">
+      <DependentUpon>CAMPUSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAMPUSModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CAMPUSModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAMPUSModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CAMPUSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAMPUSModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CAMPUSModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="EMERGENCYSERVICE.cs">
+      <DependentUpon>EMERGENCYSERVICEModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EMERGENCYSERVICEModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EMERGENCYSERVICEModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EMERGENCYSERVICEModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EMERGENCYSERVICEModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EMERGENCYSERVICEModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EMERGENCYSERVICEModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="HOTSPOT.cs">
+      <DependentUpon>HOTSPOTModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HOTSPOTModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HOTSPOTModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HOTSPOTModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HOTSPOTModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HOTSPOTModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HOTSPOTModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="INCIDENTHISTORY.cs">
+      <DependentUpon>INCIDENTHISTORYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="INCIDENTHISTORYModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>INCIDENTHISTORYModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="INCIDENTHISTORYModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>INCIDENTHISTORYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="INCIDENTHISTORYModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>INCIDENTHISTORYModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN.cs">
+      <DependentUpon>LOGINModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LOGINModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LOGINModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LOGINModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LOGINModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LOGINModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LOGINModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="PERSON.cs">
+      <DependentUpon>PERSONModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PERSONModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PERSONModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PERSONModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="REPORTINCIDENT.cs">
+      <DependentUpon>REPORTINCIDENTModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTINCIDENTModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>REPORTINCIDENTModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTINCIDENTModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>REPORTINCIDENTModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTINCIDENTModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>REPORTINCIDENTModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="SAFEZONE.cs">
+      <DependentUpon>SAFEZONEModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SAFEZONEModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAFEZONEModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SAFEZONEModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAFEZONEModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SAFEZONEModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAFEZONEModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="STUDENT.cs">
+      <DependentUpon>STUDENTModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STUDENTModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>STUDENTModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STUDENTModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>STUDENTModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STUDENTModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>STUDENTModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="SUBURB.cs">
+      <DependentUpon>SUBURBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SUBURBModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SUBURBModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SUBURBModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SUBURBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SUBURBModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SUBURBModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="TYPE.cs">
+      <DependentUpon>TYPEModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TYPEModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TYPEModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TYPEModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TYPEModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TYPEModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TYPEModel.edmx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="ADMINISTRATORModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ADMINISTRATORModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ADMINISTRATORModel.edmx.diagram">
+      <DependentUpon>ADMINISTRATORModel.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="ALERTModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ALERTModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ALERTModel.edmx.diagram">
+      <DependentUpon>ALERTModel.edmx</DependentUpon>
+    </None>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="EMERGENCYSERVICEModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EMERGENCYSERVICEModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="CAMPUSModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CAMPUSModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="CAMPUSModel.edmx.diagram">
+      <DependentUpon>CAMPUSModel.edmx</DependentUpon>
+    </None>
+    <None Include="EMERGENCYSERVICEModel.edmx.diagram">
+      <DependentUpon>EMERGENCYSERVICEModel.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="HOTSPOTModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>HOTSPOTModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="HOTSPOTModel.edmx.diagram">
+      <DependentUpon>HOTSPOTModel.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="INCIDENTHISTORYModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>INCIDENTHISTORYModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="INCIDENTHISTORYModel.edmx.diagram">
+      <DependentUpon>INCIDENTHISTORYModel.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="LOGINModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>LOGINModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="LOGINModel.edmx.diagram">
+      <DependentUpon>LOGINModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <EntityDeploy Include="STUDENTModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>STUDENTModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="SAFEZONEModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SAFEZONEModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="PERSONModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PERSONModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="PERSONModel.edmx.diagram">
+      <DependentUpon>PERSONModel.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="REPORTINCIDENTModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>REPORTINCIDENTModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="REPORTINCIDENTModel.edmx.diagram">
+      <DependentUpon>REPORTINCIDENTModel.edmx</DependentUpon>
+    </None>
+    <None Include="SAFEZONEModel.edmx.diagram">
+      <DependentUpon>SAFEZONEModel.edmx</DependentUpon>
+    </None>
+    <None Include="STUDENTModel.edmx.diagram">
+      <DependentUpon>STUDENTModel.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="SUBURBModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SUBURBModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="SUBURBModel.edmx.diagram">
+      <DependentUpon>SUBURBModel.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="TYPEModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>TYPEModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="TYPEModel.edmx.diagram">
+      <DependentUpon>TYPEModel.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ADMINISTRATORModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ADMINISTRATORModel.edmx</DependentUpon>
+      <LastGenOutput>ADMINISTRATORModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ADMINISTRATORModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ADMINISTRATORModel.edmx</DependentUpon>
+      <LastGenOutput>ADMINISTRATORModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="ALERTModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ALERTModel.edmx</DependentUpon>
+      <LastGenOutput>ALERTModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ALERTModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ALERTModel.edmx</DependentUpon>
+      <LastGenOutput>ALERTModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="CAMPUSModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CAMPUSModel.edmx</DependentUpon>
+      <LastGenOutput>CAMPUSModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="CAMPUSModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CAMPUSModel.edmx</DependentUpon>
+      <LastGenOutput>CAMPUSModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="EMERGENCYSERVICEModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EMERGENCYSERVICEModel.edmx</DependentUpon>
+      <LastGenOutput>EMERGENCYSERVICEModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="EMERGENCYSERVICEModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EMERGENCYSERVICEModel.edmx</DependentUpon>
+      <LastGenOutput>EMERGENCYSERVICEModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="HOTSPOTModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HOTSPOTModel.edmx</DependentUpon>
+      <LastGenOutput>HOTSPOTModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="HOTSPOTModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HOTSPOTModel.edmx</DependentUpon>
+      <LastGenOutput>HOTSPOTModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="INCIDENTHISTORYModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>INCIDENTHISTORYModel.edmx</DependentUpon>
+      <LastGenOutput>INCIDENTHISTORYModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="INCIDENTHISTORYModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>INCIDENTHISTORYModel.edmx</DependentUpon>
+      <LastGenOutput>INCIDENTHISTORYModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="LOGINModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LOGINModel.edmx</DependentUpon>
+      <LastGenOutput>LOGINModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="LOGINModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LOGINModel.edmx</DependentUpon>
+      <LastGenOutput>LOGINModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="PERSONModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PERSONModel.edmx</DependentUpon>
+      <LastGenOutput>PERSONModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="PERSONModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PERSONModel.edmx</DependentUpon>
+      <LastGenOutput>PERSONModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="REPORTINCIDENTModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>REPORTINCIDENTModel.edmx</DependentUpon>
+      <LastGenOutput>REPORTINCIDENTModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="REPORTINCIDENTModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>REPORTINCIDENTModel.edmx</DependentUpon>
+      <LastGenOutput>REPORTINCIDENTModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="SAFEZONEModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SAFEZONEModel.edmx</DependentUpon>
+      <LastGenOutput>SAFEZONEModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="SAFEZONEModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SAFEZONEModel.edmx</DependentUpon>
+      <LastGenOutput>SAFEZONEModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="STUDENTModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>STUDENTModel.edmx</DependentUpon>
+      <LastGenOutput>STUDENTModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="STUDENTModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>STUDENTModel.edmx</DependentUpon>
+      <LastGenOutput>STUDENTModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="SUBURBModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SUBURBModel.edmx</DependentUpon>
+      <LastGenOutput>SUBURBModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="SUBURBModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SUBURBModel.edmx</DependentUpon>
+      <LastGenOutput>SUBURBModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="TYPEModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TYPEModel.edmx</DependentUpon>
+      <LastGenOutput>TYPEModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="TYPEModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TYPEModel.edmx</DependentUpon>
+      <LastGenOutput>TYPEModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
